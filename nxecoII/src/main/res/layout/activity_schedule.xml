@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/guid"
+        android:layout_width="310dp"
+        android:layout_height="90dp"
+        android:background="@drawable/text_background"
+        android:gravity="center"
+        android:text="Please select a zone"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/select_zones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/left_btn"
+            android:layout_width="60dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/left_page"
+            android:gravity="center" />
+
+        
+
+            <TextView
+                android:id="@+id/zones1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="35dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/zones2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round1"
+                 android:layout_marginLeft="80dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+               
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/zones3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round1"
+                android:layout_marginLeft="80dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/zones4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round1"
+                android:layout_marginLeft="80dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+      
+
+        <TextView
+            android:id="@+id/right_btn"
+            android:layout_width="60dp"
+            android:layout_height="140dp"
+         android:layout_marginLeft="35dp"
+            
+            android:background="@drawable/right_page"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_zones"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Program"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/spring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:button="@xml/checkbox_program" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Spring"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/summer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:button="@xml/checkbox_program" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Summer"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/Fall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:button="@xml/checkbox_program" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Fall"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/winter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:button="@xml/checkbox_program" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:text="Winter"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

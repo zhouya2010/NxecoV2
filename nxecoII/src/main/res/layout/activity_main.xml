@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/layout_back"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/title" >
+
+            <TextView
+                android:id="@+id/wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/wifi" />
+
+            <TextView
+                android:id="@+id/sensor_img"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_toRightOf="@id/wifi"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:background="@drawable/sensor"/>
+
+            <ImageView
+                android:id="@+id/download_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/sensor_img"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:src="@anim/download_anim"/>
+
+            <TextView
+                android:id="@+id/download_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/download_img"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:visibility="invisible"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <com.nxecoii.activity.child.MyDigitalClock
+                    android:id="@+id/timer_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="25dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/inflate"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:layout_below="@id/layout_back"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <!-- <RelativeLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="116dp" -->
+        <!-- android:layout_alignParentBottom="true" -->
+        <!-- android:background="@drawable/navigation" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/watering" -->
+        <!-- android:layout_width="96dp" -->
+        <!-- android:layout_height="90dp" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="40dp" -->
+        <!-- android:background="@xml/watering_btn" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/schedule" -->
+        <!-- android:layout_width="96dp" -->
+        <!-- android:layout_height="90dp" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="120dp" -->
+        <!-- android:layout_toRightOf="@id/watering" -->
+        <!-- android:background="@xml/schedule_btn" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/home" -->
+        <!-- android:layout_width="96dp" -->
+        <!-- android:layout_height="90dp" -->
+        <!-- android:layout_marginLeft="120dp" -->
+        <!-- android:layout_marginTop="23dp" -->
+        <!-- android:layout_toRightOf="@id/schedule" -->
+        <!-- android:background="@xml/home_btn" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/history" -->
+        <!-- android:layout_width="96dp" -->
+        <!-- android:layout_height="90dp" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="120dp" -->
+        <!-- android:layout_toRightOf="@id/home" -->
+        <!-- android:background="@xml/history_btn" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/setting" -->
+        <!-- android:layout_width="96dp" -->
+        <!-- android:layout_height="90dp" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="120dp" -->
+        <!-- android:layout_toRightOf="@id/history" -->
+        <!-- android:background="@xml/setting_btn" /> -->
+        <!-- </RelativeLayout> -->
+
+        <RadioGroup
+            android:id="@+id/menu_group"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/navigation"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/watering"
+                android:layout_width="96dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:background="@xml/watering_btn"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/schedule"
+                android:layout_width="96dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="120dp"
+                android:layout_toRightOf="@id/watering"
+                android:background="@xml/schedule_btn"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/home"
+                android:layout_width="96dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="23dp"
+                android:layout_toRightOf="@id/schedule"
+                android:background="@xml/home_btn"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/history"
+                android:layout_width="96dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="120dp"
+                android:layout_toRightOf="@id/home"
+                android:background="@xml/history_btn"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/setting"
+                android:layout_width="96dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="120dp"
+                android:layout_toRightOf="@id/history"
+                android:background="@xml/setting_btn"
+                android:button="@null" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

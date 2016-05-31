@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+     
+    <TextView
+        android:id="@+id/weather1_week_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+      
+        android:layout_marginTop="83dp"
+        android:background="@drawable/date_back"
+        android:gravity="center"
+        android:text="Today"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/weather1_temp_text"
+        android:layout_width="100dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/weather1_image"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="96-71.6°F"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/weather1_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weather1_week_text"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/weather_scatteredclouds_day" />
+
+    <RelativeLayout
+        android:id="@+id/adjust_view"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_below="@id/weather1_temp_text"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/watering_adjustment">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/weather1_adjust_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="818dp"
+        android:layout_alignParentRight="true"
+     	android:background="@drawable/dividing_line"
+        />
+
+</RelativeLayout>

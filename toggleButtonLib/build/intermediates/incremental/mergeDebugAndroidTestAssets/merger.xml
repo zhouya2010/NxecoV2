@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="debug"><source path="D:\AndroidStudioWorkSpace\NxecoV2\toggleButtonLib\build\intermediates\bundles\debug\assets"/></dataSet><dataSet config="main"><source path="D:\AndroidStudioWorkSpace\NxecoV2\toggleButtonLib\src\androidTest\assets"/><source path="D:\AndroidStudioWorkSpace\NxecoV2\toggleButtonLib\build\generated\assets\shaders\androidTest\debug"/></dataSet></merger>

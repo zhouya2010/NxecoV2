@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="35dp"
+    android:paddingLeft="50dp"
+    android:paddingTop="32dp">
+
+    <RelativeLayout
+        android:id="@+id/program"
+        android:background="@color/white_trans_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/spring"
+            style="@style/program_layout">
+
+            <ImageView
+                android:id="@+id/program_set_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/program_set" />
+
+            <ImageView
+                android:id="@+id/program_text_edit_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/program_edit" />
+
+            <ImageView
+                android:id="@+id/program_icon_1"
+                style="@style/program_image"
+                android:background="@drawable/spring_icon" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/program_icon_1">
+
+                <com.nxecoii.adapter.AutoScaleTextView
+                    android:id="@+id/program_name_1"
+                    style="@style/program_name"
+                    android:text="Spring"
+                    app:minTextSize="16sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="1dp"
+            android:layout_height="391dp"
+            android:layout_toRightOf="@id/spring"
+            android:background="#50000000" />
+
+        <RelativeLayout
+            android:id="@+id/summer"
+            style="@style/program_layout"
+            android:layout_toRightOf="@id/line1">
+
+            <ImageView
+                android:id="@+id/program_set_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/program_set" />
+
+            <ImageView
+                android:id="@+id/program_text_edit_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/program_edit" />
+
+            <ImageView
+                android:id="@+id/program_icon_2"
+                style="@style/program_image"
+                android:background="@drawable/summer_icon" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/program_icon_2">
+
+                <com.nxecoii.adapter.AutoScaleTextView
+                    android:id="@+id/program_name_2"
+                    style="@style/program_name"
+                    android:text="Summer"
+                    app:minTextSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="249dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/spring"
+            android:background="#50000000" />
+
+
+        <RelativeLayout
+            android:id="@+id/fall"
+            style="@style/program_layout"
+            android:layout_below="@id/line2">
+
+            <ImageView
+                android:id="@+id/program_set_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/program_set" />
+
+            <ImageView
+                android:id="@+id/program_text_edit_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/program_edit" />
+
+            <ImageView
+                android:id="@+id/program_icon_3"
+                style="@style/program_image"
+                android:background="@drawable/fall_icon" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/program_icon_3">
+
+                <com.nxecoii.adapter.AutoScaleTextView
+                    android:id="@+id/program_name_3"
+                    style="@style/program_name"
+                    android:text="Fall"
+                    app:minTextSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/winter"
+            style="@style/program_layout"
+            android:layout_below="@id/line2"
+            android:layout_toRightOf="@id/line1">
+
+            <ImageView
+                android:id="@+id/program_set_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/program_set" />
+
+            <ImageView
+                android:id="@+id/program_text_edit_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/program_edit" />
+
+            <ImageView
+                android:id="@+id/program_icon_4"
+                style="@style/program_image"
+                android:background="@drawable/winter_icon" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/program_icon_4">
+
+                <com.nxecoii.adapter.AutoScaleTextView
+                    android:id="@+id/program_name_4"
+                    style="@style/program_name"
+                    android:text="Winter"
+                    app:minTextSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zone_select"
+        android:layout_width="239dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:background="#1F000000">
+
+        <LinearLayout
+            android:id="@+id/zone_sel_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white_trans_20"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/zone_title_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/zone_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="zone"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/zone_sel_title"
+            android:background="@color/line3" />
+
+        <com.nxecoii.adapter.LineGridView
+            android:id="@+id/zone_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/line_3"
+            android:gravity="center_horizontal"
+            android:numColumns="2"
+            android:background="@color/white_trans_10"
+            android:stretchMode="columnWidth" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/zone_info"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white_trans_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/zone_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white_trans_20"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/zone_info_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/zone_info_img_icon" />
+
+            <TextView
+                android:id="@+id/zone_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:text="zone 1"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line3" />
+
+        <RelativeLayout
+            android:id="@+id/repeat"
+            android:layout_width="fill_parent"
+            android:layout_height="82dp"
+            android:background="@drawable/repeat_select"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/repeat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="34dp"
+                android:text="Repeat"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/repeat_text"
+                android:background="@drawable/repeat_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/repeat_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="Sun Tues Mon"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <!--<ImageView -->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/reapeat_arrow"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginBottom="12dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--/>-->
+        </RelativeLayout>
+        <!--         <ImageView  -->
+
+        <!--             android:layout_width="28dp" -->
+        <!--             android:layout_height="30dp" -->
+        <!--             android:background="@drawable/alarm_clock" -->
+        <!--             android:layout_marginTop="9dp" -->
+        <!--             android:layout_marginLeft="12dp" -->
+        <!--             /> -->
+
+        <!-- 		 <TextView  -->
+        <!--             android:id="@+id/zone_name" -->
+        <!--             android:layout_width="match_parent" -->
+        <!--             android:layout_height="30dp" -->
+        <!--             android:layout_marginTop="9dp" -->
+        <!--             android:layout_marginLeft="11dp" -->
+        <!--             android:textSize="24sp" -->
+        <!--             android:textColor="@color/white" -->
+        <!--             android:background="@color/settings_menu_bg" -->
+        <!--             /> -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line3" />
+
+        <ListView
+            android:id="@+id/time_list"
+            android:layout_width="354dp"
+            android:layout_height="223dp"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_save"
+                style="@style/sch_btn"
+                android:text="OK" />
+
+            <TextView
+                android:id="@+id/btn_delete"
+                style="@style/sch_btn"
+                android:layout_marginLeft="1dp"
+                android:text="Reset" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

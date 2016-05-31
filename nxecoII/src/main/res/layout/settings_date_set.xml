@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="135dp"
+    android:layout_marginTop="80dp" >
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/time_text"
+        android:textColor="@color/settings_title"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/time_text"
+        android:background="@color/line2" />
+
+    <RelativeLayout
+        android:id="@+id/time_set"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/line"
+        android:orientation="horizontal"
+        android:background="@xml/repeat_select_background" >
+
+        <TextView
+            android:id="@+id/current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="16:39"
+            android:textColor="@color/settings_menu"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/right_arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_set"
+        android:layout_marginTop="60dp"
+        android:text="@string/date"
+        android:textColor="@color/settings_title"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/date_text"
+        android:background="@color/line2" />
+
+    <RelativeLayout
+        android:id="@+id/date_set"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/line2"
+        android:background="@xml/repeat_select_background" >
+
+        <TextView
+            android:id="@+id/current_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Sep 14,2015"
+            android:textColor="@color/settings_menu"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/right_arrow" />
+    </RelativeLayout>
+
+</RelativeLayout>

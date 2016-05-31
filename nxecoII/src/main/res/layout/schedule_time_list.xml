@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/time_list_item" 
+        android:layout_width="match_parent"
+    	android:layout_height="54dp"
+    	android:orientation="horizontal"
+    	android:background="@xml/repeat_select_background"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/clock2"/>
+        
+     <TextView
+        android:id="@+id/time_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="54dp"
+        android:layout_gravity="center_vertical"
+        android:text="07:00"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="108dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:text="min"
+        android:textSize="16sp" />
+
+    </LinearLayout>
+    
+</LinearLayout>
